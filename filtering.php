@@ -6,6 +6,6 @@ $isEven = function ($number) {
     return $number % 2 == 0;
 };
 
-$evenNumbers = array_filter($numbers, $isEven);
+$evenNumbers = array_values(array_filter($numbers, $isEven));
 
 print_r($evenNumbers);
